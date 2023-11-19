@@ -1,27 +1,76 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  min-height: calc(100vh - 95px - 90px);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+header {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.783);
+}
+
+footer {
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  column-gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.about_nav {
+  display: flex;
+  column-gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.about_nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.about_nav a:hover {
+  text-decoration: underline;
+}
+
+.posts-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.posts-list a:hover {
+  text-decoration: underline;
+}
+
+.post-paragraph {
+  max-width: 60%;
+  text-align: center;
+}
+
+.active {
+  color: rgb(145, 130, 227);
+  cursor: default;
 }
