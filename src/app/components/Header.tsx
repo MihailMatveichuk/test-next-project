@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Search from "./Search";
 
 const navLinks = [{
   label: "Home",
@@ -15,7 +16,9 @@ const navLinks = [{
 export default function Header() {
   return (
     <header className='container'>
-      <Navbar navLinks={navLinks}/>
+      <div className="header-wrapper">
+        <Navbar navLinks={navLinks}/>
+      </div>
     </header>
   );
 }

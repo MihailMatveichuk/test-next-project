@@ -21,6 +21,12 @@ header {
   background: rgba(0, 0, 0, 0.783);
 }
 
+.header-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
 footer {
   padding: 1rem;
 }
@@ -56,6 +62,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.posts-list {
+  width: 50vw;
+}
+
 .posts-list a {
   text-decoration: none;
   color: black;
@@ -73,4 +83,20 @@ nav a:hover {
 .active {
   color: rgb(145, 130, 227);
   cursor: default;
+}
+
+.search-form input {
+  padding: 8px;
+  border: 0.5px solid rgb(145, 130, 227);
+  border-radius: 2px;
+  outline: none;
+}
+
+.search-form button {
+  padding: 8px;
+  border: 0.5px solid rgb(145, 130, 227);
+  color: white;
+  background: rgb(145, 130, 227);
+  border-radius: 2px;
+  cursor: pointer;
 }
