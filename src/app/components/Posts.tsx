@@ -11,6 +11,9 @@ import { getAllPosts } from "../../../services/getPosts";
 export default function Posts() {
 const {data: posts, isLoading} = useSWR('posts', getAllPosts)
 
+console.log(posts);
+
+
   // const [posts, loading, getAllPosts] = usePosts(
   //   (state) => [state.posts, state.loading, state.getAllPosts],
   //   shallow
