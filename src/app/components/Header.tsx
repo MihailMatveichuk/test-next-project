@@ -1,6 +1,7 @@
+'use client'
+
 import React from "react";
 import Navbar from "./Navbar";
-import Search from "./Search";
 
 const navLinks = [{
   label: "Home",
@@ -13,7 +14,11 @@ const navLinks = [{
   href: "/about"
 }]
 
+
+
+
 export default function Header() {
+
   return (
     <header className='container'>
       <div className="header-wrapper">
