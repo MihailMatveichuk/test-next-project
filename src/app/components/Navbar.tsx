@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { usePathname } from 'next/navigation'
-import { useSession, signIn, signOut } from 'next-auth/react'
+import { useSession, signOut } from 'next-auth/react'
 
 type NavLink={
     label: string,
@@ -17,7 +17,6 @@ type Props = {
 export default function Navbar({navLinks}: Props) {
 const pathname = usePathname()
 const session = useSession()
-console.log(session);
 
   return (
     <nav>
@@ -32,9 +31,9 @@ console.log(session);
             )
         })}
         {session?.data && (
-            <Link href='/profile'>Profile</Link>
+            <Link href='/profile' className={pathname === '/profile' ? "active" : ''}>Profile</Link>
         )}
-        {session?.data ? <Link href='#' onClick={() => signOut({callbackUrl: '/'})}>Sign Out</Link> : <Link href='/signin'>Sign In</Link>}
+        {session?.data ? <Link href='#' onClick={() => signOut({callbackUrl: '/'})}>Sign Out</Link> : <Link href='/signin' className={pathname === '/signin' ? "active" : ''}>Sign In</Link>}
     </nav>
   )
 }
