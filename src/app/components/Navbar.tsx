@@ -21,7 +21,7 @@ const session = useSession()
   return (
     <nav>
         {navLinks.map((link, i) => {
-            const isActive = pathname === link.href;
+            const isActive = pathname.split('/')[1] === link.href.split('/')[1];
             return (
                 <Link 
                     key={i} 

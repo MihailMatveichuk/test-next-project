@@ -29,7 +29,7 @@ export default function SingInForm() {
     }
   return (
         <form onSubmit={hadlerSubmit}>
-            {!error ? <div>Email o r password is not valid</div> :  null}
+            {!error ? <div>Email or password is not valid</div> :  null}
             <input type="email" name='email' required placeholder='Email'/>
             <input type="password" name='password'required placeholder='Password'/>
             <button type='submit'>Sing In</button>

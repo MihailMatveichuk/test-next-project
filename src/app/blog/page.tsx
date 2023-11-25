@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Posts from "../components/Posts";
 import Search from "../components/Search";
 export interface IPost {
@@ -12,6 +12,8 @@ export interface IPost {
 export const metadata: Metadata = {
   title: "Next App | Blog",
 };
+
+export const revalidate = 10;
 
 export default function Blog() {
 

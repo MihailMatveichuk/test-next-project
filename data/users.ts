@@ -20,4 +20,12 @@ export const users = [
       password: "12345",
       role: "guest",
     },
+    {
+      id: "4",
+      email: "mihkailmatveichuk@gmail.com",
+      name: "Михаил Матвейчук",
+      password: "12345",
+      role: "host",
+      image: "https://lh3.googleusercontent.com/a/ACg8ocLaNLCp_V19vTBNeA5C7bvLTOlfs9T95LAVv8MfdBbh=s96-c"
+    },
   ];
