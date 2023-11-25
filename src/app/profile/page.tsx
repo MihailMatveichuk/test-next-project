@@ -8,8 +8,10 @@ export default async function page() {
 
   return (
     <div>
-       <h1>Profile of {session?.user?.name}</h1>
-       {session?.user?.image &&  <img src={session?.user?.image!} alt="Image" />}
+       <h1 >Profile of {session?.user?.name}</h1>
+       {session?.user?.image &&  <img src={session?.user?.image!} alt="Image" style={{
+        borderRadius: '50%'
+       }} />}
     </div>
   )
 }
