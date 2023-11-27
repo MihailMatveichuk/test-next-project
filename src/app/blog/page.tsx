@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import React from "react";
 import Posts from "../components/Posts";
 import Search from "../components/Search";
+import NewPostForm from "../components/NewPostForm";
+import Link from "next/link";
 export interface IPost {
   userId: number;
   id: number;
@@ -22,6 +24,7 @@ export default function Blog() {
       <h1>Blog page</h1>
       <Search/>
       <Posts/>
+      <Link href = '/blog/new' className="create-post__button">Create new Post</Link>
     </div>
   );
 }
