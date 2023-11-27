@@ -3,8 +3,8 @@
     {
       "userId": 1,
       "id": 1,
-      "title": "Panda CSS was released",
-      "body": "New generation of CSS-in-JS libraries makes it faster with no runtime style generation. \nPanda is a styling engine that generates styling primitives to author atomic CSS and recipes in a type-safe and readable manner. \nPanda combines the developer experience of CSS-in-JS and the performance of atomic CSS. It leverages static analysis to scan your JavaScript and TypeScript files for JSX style props and function calls, generating styles on-demand (aka Just-in-Time)"
+      "title": "Panda CSS was released, Pandas is the collest animal!!!",
+      "body": "New generation of CSS-in-JS libraries makes it faster with no runtime style generation. \r\nPanda is a styling engine that generates styling primitives to author atomic CSS and recipes in a type-safe and readable manner. \r\nPanda combines the developer experience of CSS-in-JS and the performance of atomic CSS. It leverages static analysis to scan your JavaScript and TypeScript files for JSX style props and function calls, generating styles on-demand (aka Just-in-Time);\r\nPandas is the collest animal!!!"
     },
     {
       "userId": 1,
@@ -25,16 +25,10 @@
       "body": "A lot of changes in the core library plus documentation updates. Fixed issues with NextJS examples and many more..."
     },
     {
-      "title": "Awesome post",
-      "body": "The most collest post!!",
+      "title": "Awesome updated",
+      "body": "Awesome updated",
       "userId": 1,
       "id": 6
-    },
-    {
-      "title": "Again awesome post",
-      "body": "Again awesome post",
-      "userId": 1,
-      "id": 7
     }
   ]
 }

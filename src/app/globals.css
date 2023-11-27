@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --color-bg: #2C2C32;
   --color-active: #0f7dc6;
@@ -155,10 +151,17 @@ input[type="submit"] {
 
 .create-post__button {
   margin: 2rem;
-  text-decoration: none;
   padding: 0.5rem 1rem;
   background-color: var(--color-active);
   cursor: pointer;
   color: white;
-  border: none;
+}
+
+.edit-post__button {
+  margin: 2rem;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  background-color: var(--color-active);
+  cursor: pointer;
+  color: white;
 }

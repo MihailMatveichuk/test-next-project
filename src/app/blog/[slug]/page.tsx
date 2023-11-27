@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import React from 'react'
 import { getAllPosts, getPostById } from '../../../../services/getPosts'
 import { redirect } from 'next/navigation'
+import Link from 'next/link'
 
 type Props = {
     params: {
@@ -27,7 +28,7 @@ export async function generateMetadata({params: {slug}}: Props): Promise<Metadat
 
 async function deletePost(id: string){
   'use server'
-      const responce = await fetch(`http://localhost:3300/posts/${id}`, {
+      await fetch(`http://localhost:3300/posts/${id}`, {
           method: "DELETE",
       });
 
@@ -43,9 +44,14 @@ export default async function Post({params: {slug}}: Props) {
       <h1>{post.title}</h1> 
       <p>{post.body}</p>
 
-      <form action={deletePost.bind(null, slug)}>
+  <div style={{
+    display: 'flex'
+  }}>      
+    <form action={deletePost.bind(null, slug)}>
         <input type="submit" value='Delete Post'/>
       </form>
+
+      <Link className='edit-post__button' href={`/blog/${slug}/edit` }>Edit</Link></div>
     </div>
   )
 }
